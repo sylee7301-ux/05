@@ -2,17 +2,18 @@
 
 int main(void) {
     int num;
+    int abs_val;
 
     printf("Input an integer: ");
     scanf("%d", &num);
 
-    if (num > 0) {
-        printf("Positive number.\n");
-    } else if (num < 0) {
-        printf("Negative number.\n");
+    if (num < 0) {
+        abs_val = -num;
     } else {
-        printf("It is 0.\n");
+        abs_val = num;
     }
+
+    printf("The absolute value is %d.\n", abs_val);
 
     return 0;
 }
